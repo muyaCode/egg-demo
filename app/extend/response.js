@@ -1,5 +1,5 @@
 module.exports = {
-    isSuccess(){
-        return this.status === 200;
-    }
-}
+  isSuccess() {
+    return this.status === 200;
+  },
+};

@@ -1,6 +1,6 @@
 module.exports = {
-    isChrome(){
-        let userAgent = this.get('user-agent').toLowerCase();
-        return userAgent.includes('chrome');
-    }
-}
+  isChrome() {
+    const userAgent = this.get('user-agent').toLowerCase();
+    return userAgent.includes('chrome');
+  },
+};

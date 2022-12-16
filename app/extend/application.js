@@ -1,9 +1,9 @@
-let cache = {};
+const cache = {};
 module.exports = {
-    set(key, value){
-        cache[key] = value;
-    },
-    get(key){
-        return cache[key];
-    }
+  set(key, value) {
+    cache[key] = value;
+  },
+  get(key) {
+    return cache[key];
+  },
 };
