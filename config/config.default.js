@@ -19,25 +19,25 @@ module.exports = appInfo => {
   config.middleware = [];
 
   config.ajv = {
-    keyword: 'schema',  // to indicate the namespace and path of schemas, default as 'schema'
-    allErrors: true,    // required for custom error message
-    jsonPointers: true,  // required for custom error message
+    keyword: 'schema', // to indicate the namespace and path of schemas, default as 'schema'
+    allErrors: true, // required for custom error message
+    jsonPointers: true, // required for custom error message
   };
   config.sequelize = {
-      dialect: 'mysql',
-      host: '127.0.0.1',
-      port: 3306,
-      user: 'root',
-      password: 'root',
-      database: 'demo',
+    dialect: 'mysql',
+    host: '127.0.0.1',
+    port: 3306,
+    user: 'root',
+    password: 'root',
+    database: 'demo',
   };
   config.redis = {
-      client: {
-          port: 6379,          // Redis port
-          host: '127.0.0.1',   // Redis host
-          password: '',
-          db: 0,
-      },
+    client: {
+      port: 6379, // Redis port
+      host: '127.0.0.1', // Redis host
+      password: '',
+      db: 0,
+    },
   };
   // add your user config here
   const userConfig = {
